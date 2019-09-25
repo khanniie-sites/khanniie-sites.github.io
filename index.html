@@ -2,8 +2,41 @@
 <html>
 <head>
 	<title>connie dog!</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rita/1.3.94/rita-full.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+	<style>
+		html{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			background-color: #000;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			font-family: Merriweather;
+			color: white;
+		}
+		#sonnet-name{
+			font-size: 32px;
+			margin-bottom: 12px;
+		}
+		#wrapper{
+			max-width: 500px;
+		}
+		#sonnet-container{
+			line-height: 24px;
+		}
+	</style>
 </head>
 <body>
-This is a hosting site for crabbage. 
+	<div id="wrapper">
+		<div id="sonnet-name"></div>
+		<div id="sonnet-container"></div>
+		<script src="main.js"></script>
+	</div>
 </body>
 </html>
