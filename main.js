@@ -6,7 +6,7 @@ function generate(){
 	let resultArray = [];
 	let sonnet = sonnets[Math.floor(Math.random() * sonnets.length)];
 	let lines = sonnet.lines;
-	document.getElementById("sonnet-name").innerHTML = sonnet.title;
+	document.getElementById("sonnet-name").innerHTML = "Shakepeare's " + sonnet.title;
 	for (var i = 0; i < lines.length; i++){
 		let lineArr = lines[i].split(" ");
 		let doggyDogWorld = lineArr.map(ele => (RiTa.isNoun(ele) ? "dog" : ele));
